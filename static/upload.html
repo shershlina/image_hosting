@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Загрузка изображения</title>
+    <title>Upload</title>
 </head>
 <body>
 <form method="POST" enctype="multipart/form-data" action="/upload">
-    <input type="file" id="file-upload" name="image" accept="image/*">
+    <input type="file" id="file-upload" name="image" accept=".jpeg,.png,.gif,.jpg">
     <label for="file-upload">Выберите файл</label>
     <button type="submit">Загрузить</button>
 </form>

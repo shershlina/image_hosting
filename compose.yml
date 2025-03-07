@@ -8,8 +8,8 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./app/images:/app/images
-      - ./app/logs:/app/logs
+      - ./images:/app/images
+      - ./logs:/app/logs
     networks:
       - default
 
@@ -21,9 +21,9 @@ services:
       - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./app/images:/images
-      - ./app/logs:/var/log/nginx
-      - ./app/static:/etc/nginx/html
+      - ./images:/images
+      - ./logs:/var/log/nginx
+      - ./static:/etc/nginx/html
     depends_on:
       - app
     networks:
