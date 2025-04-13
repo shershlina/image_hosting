@@ -39,7 +39,7 @@ Two main components:
    - Runs in a Docker container listening on port `8000`
    - Built without frameworks using only Python's standard library (`http.server`)
 
-2. **Nginx-сервер:**
+2. **Nginx-server:**
    - Serves static files and uploaded images via the `/images/` route
    - Proxies requests to Python backend for other routes
    - Runs in a separate Docker container listening on port `80`
