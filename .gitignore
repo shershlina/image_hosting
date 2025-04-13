@@ -1,0 +1,6 @@
+.env
+
+.venv
+/images
+logs
+backups

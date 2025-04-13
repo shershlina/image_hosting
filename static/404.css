@@ -1,0 +1,70 @@
+body {
+    font-family: Marmelad, sans-serif;
+    background-color: #f9f3e6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #5a3d2b;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.bee {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url('bee.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fly 10s infinite linear;
+    z-index: 10;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(500px, -200px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #5a3d2b;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffab00;
+}

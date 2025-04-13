@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Marmelad, sans-serif;
+  background-color: #FFFAF0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #FF8C00;
+}
+.main-header p, .main-header div {
+  font-size: 0.9rem;
+  color: #B35C00;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: inline-flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.tab-link {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+  color: #E65100;
+}
+.tab-link.active {
+  background-color: #FFE0B2;
+  font-weight: bold;
+}
+.tab-link:hover {
+  background-color: #FFCC80;
+}
+
+.tab-content {
+  display: none;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.tab-content.active {
+  display: block;
+}
+
+.upload-area {
+  border: 2px dashed #FFA000;
+  border-radius: 8px;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: border-color 0.3s;
+  background-color: #FFF3E0;
+}
+.upload-area__icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #FF8C00;
+}
+.upload-area__subtext {
+  color: #E65100;
+  margin-top: 10px;
+}
+
+#browseButton, #copyButton, .hero-button {
+  background-color: #FFA000;
+  color: #000;
+  padding: 12px 20px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#browseButton:hover, #copyButton:hover, .hero-button:hover {
+  background-color: #FFC107;
+}
+
+.current-upload {
+  margin-top: 30px;
+  text-align: left;
+}
+.current-upload label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.current-upload__field {
+  display: flex;
+  gap: 8px;
+}
+.current-upload__field input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.images-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.images-table th, .images-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+.images-table th {
+  background-color: #FFE0B2;
+}
+.images-table td a {
+  color: #0066FF;
+  text-decoration: none;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff3b3b;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s;
+  color: #FF3D00;
+}
+.delete-btn:hover {
+  color: #DD2C00;
+}
+
+.upload-area.dragover {
+  border-color: #FFC107;
+}
+.upload-area.success {
+  border-color: #4CAF50;
+}
+.upload-area.error {
+  border-color: #F44336;
+}

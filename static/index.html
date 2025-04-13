@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Image Hosting</title>
+    <title>Image hosting main page</title>
+    <link rel="stylesheet" href="styles_main.css">
 </head>
-<body>
-    <h1>Image Hosting</h1>
-    <p>
-        Наш сервис — это не просто хранилище картинок. Это место, где
-        пользователи могут:
-    </p>
-    <ul>
-        <li> Загружать фотки в популярных форматах (.jpg, .png, .gif).</li>
-        <li> Быть уверенными, что ваши картинки надежно сохранены.</li>
-        <li> Получать удобные прямые ссылки на загруженные изображения.</li>
-    </ul>
-    <button onclick="location.href='/upload'">Загрузить</button>
-    <button onclick="location.href='/images'">Посмотреть</button>
+<body class="hero-body">
+<div>
+    <header class="hero-header">
+        <h1>Upload Photos</h1>
+        <p>Upload selfies, memes or any fun (or even not fun) pictures here</p>
+        <a href="/upload/" class="hero-button">Start uploading</a>
+    </header>
+
+    <section class="hero-section">
+        <img id="heroImage" width="412" height="1014">
+    </section>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>

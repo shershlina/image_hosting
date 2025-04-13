@@ -1,0 +1,9 @@
+IMAGES_FOLDER = "images/"
+STATIC_FOLDER = "static/"
+SERVER_ADDRESS = ("0.0.0.0", 8000)
+LOG_PATH = "logs/"
+LOG_FILE = "app.log"
+ERROR_FILE = "upload_failed.html"
+ALLOWED_EXTENSIONS = [".png", ".jpg", ".jpeg", ".gif"]
+MAX_FILE_SIZE = 5 * 1024 * 1024
+IMAGES_ON_PAGE = 10
