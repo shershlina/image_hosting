@@ -1,4 +1,4 @@
-### *Project image_hosting*
+## *Project image_hosting*
 A web service for viewing and storing images. Users upload images via the website and receive direct links to them. 
 Users also can see the gallery of uploaded images with previews.
 
