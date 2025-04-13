@@ -15,6 +15,18 @@ docker compose up --build
 ```
 The application will be available at: `http://localhost:8080`
 
+### *How to backup the project*
+1. Ensure the PostgreSQL container is running.
+2. Run the command:
+   ```bash
+   ./backup.sh
+   ```
+   Or with custom parameters:
+   ```bash
+   BACKUP_DIR=/path/to/backups PG_USER=your_user DB_NAME=your_db ./backup.sh
+   ```
+   The backup will be saved in the `./backups` folder (or the path specified in `BACKUP_DIR`) with the format `backup_YYYY-MM-DD_HHMMSS.sql`.
+
 ### *Routes*
 - **Route:** `/`
 The project’s homepage with a welcome message. Contains links to key routes.
